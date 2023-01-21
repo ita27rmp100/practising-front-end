@@ -1,1 +1,28 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="resault" id="resault"></div>
+        <div class="opperation">
+            <input type="button" value="/" class="opp" onclick="new Functions().Add('/')">
+            <input type="button" value="×" class="opp" onclick="new Functions().Add('*')">
+            <input type="button" value="-" class="opp" onclick="new Functions().Add('-')">
+            <input type="button" value="+" class="opp" onclick="new Functions().Add('+')">
+            <input type="button" value="=" class="opp" onclick="new Functions().calc()">
+        </div>
+        <div class="CalcTool">
+            <input type="button" value="C" class="tool" onclick="new Functions().clean()">
+            <input type="button" value="&#8678;" class="tool" onclick="new Functions().cleanLast()">
+            <input type="button" value="%" class="tool" onclick="new Functions().Add('/100')">
+        </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
